@@ -1,0 +1,41 @@
+@import '../color';
+
+.userPage {
+  min-height: 80vh;
+  width: 90%;
+  margin-top: 100px;
+  background-color: $wrapper-background;
+  border-radius: 8px;
+
+  &-id {
+    color: $primary-text;
+    font-size: 20px;
+    padding-left: 70px;
+    padding-top: 80px;
+  }
+  &-id0 {
+    color: $primary-text;
+    font-size: 20px;
+    padding-left: 70px;
+    padding-top: 80px;
+  }
+  &-id1 {
+    color: $primary-text;
+    font-size: 15px;
+    padding-left: 70px;
+    padding-top: 40px;
+    display: inline-block;
+  }
+  &-id2 {
+    display: inline-block;
+    color: $primary-text;
+    font-size: 15px;
+    padding-left: 180px;
+  }
+  &-id3 {
+    color: $primary-text;
+    font-size: 15px;
+    padding-left: 180px;
+    display: inline-block;
+  }
+}

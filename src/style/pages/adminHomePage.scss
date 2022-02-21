@@ -1,0 +1,123 @@
+@import '../color';
+
+.home-page {
+  &__title {
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $divider;
+    max-width: 650px;
+
+    span {
+      display: block;
+    }
+
+    :nth-child(1) {
+      color: $white;
+      font-size: 28px;
+      font-weight: 600px;
+    }
+
+    :nth-child(2) {
+      color: $search-text;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+
+  &__content {
+    border-radius: 8px;
+    background-color: $wrapper-background;
+    margin-top: 16px;
+    padding: 30px 0 0 30px;
+    width: 90%;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__sub-header {
+    color: $white;
+    font-size: 20px;
+  }
+
+  &__data {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px 0;
+  }
+
+  &__datacard {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid $orange;
+    border-radius: 8px;
+    margin: 0 10px;
+    padding: 20px 5px;
+    color: $white;
+  }
+
+  &__datacard-icon {
+    width: 60px;
+    height: 60px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__datacard-data {
+    span {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+
+  &__datacard-content {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  &__datacard-title {
+    color: $search-text;
+    font-size: 16px;
+  }
+
+  &__table {
+    width: 100%;
+    height: 60%;
+    margin: 20px 0;
+  }
+
+  &__best {
+    width: 100%;
+    color: $white;
+    font-size: 16px;
+    margin-left: 50px;
+
+    thead {
+      font-size: 20px;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    .table-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 20px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

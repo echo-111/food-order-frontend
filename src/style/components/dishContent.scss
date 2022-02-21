@@ -1,0 +1,69 @@
+@import '../color';
+
+.dish-content {
+  width: 100%;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__content-wrapper {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  &__dish {
+    cursor: pointer;
+    width: 190px;
+    height: 260px;
+    background-color: $wrapper-background;
+    margin-right: 64px;
+    margin-bottom: 50px;
+    border-radius: 16px;
+
+    &-img {
+      position: relative;
+      box-sizing: border-box;
+      height: 135px;
+      width: 100%;
+
+      img {
+        position: absolute;
+        height: 135px;
+        width: 135px;
+        border-radius: 50%;
+        left: 0;
+        top: -15%;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        object-fit: cover;
+
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    &-detail {
+      box-sizing: border-box;
+      text-align: center;
+      font-size: 14px;
+      padding: 10px 24px 0;
+
+      span {
+        display: block;
+      }
+    }
+
+    &-price {
+      color: $search-text;
+      text-align: center;
+      padding-top: 15px;
+    }
+  }
+}

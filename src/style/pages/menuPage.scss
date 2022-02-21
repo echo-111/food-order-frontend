@@ -1,0 +1,75 @@
+@import '../color';
+
+.menu-page {
+  background-color: $primary-background;
+  min-height: 100vh;
+  padding: 0 43px;
+}
+
+.dish-modal {
+  .Modal {
+    &--dish-modal {
+      top: 50%;
+      left: 50%;
+      right: auto;
+      bottom: auto;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+
+      .dish-wrapper {
+        &__img {
+          height: 200px;
+          width: 200px;
+          margin: 0 auto;
+          border-radius: 50%;
+          overflow: hidden;
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        &__action {
+          display: flex;
+          justify-content: center;
+          margin-top: 40px;
+        }
+
+        &__btn {
+          background-color: $orange;
+          color: $white;
+          border-radius: 8px;
+          box-shadow: $box-shadow;
+          outline: 0;
+          border: 0;
+          text-align: center;
+          height: 53px;
+          cursor: pointer;
+
+          &--increase,
+          &--decrease {
+            width: 53px;
+          }
+
+          &--decrease__disabled {
+            background-color: $box-shadow;
+            width: 53px;
+          }
+
+          &--add {
+            margin-left: 150px;
+            padding: 0 30px;
+          }
+        }
+
+        &__quantity {
+          color: $white;
+          font-size: 14px;
+          padding: 0 21px;
+        }
+      }
+    }
+  }
+}

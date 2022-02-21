@@ -1,0 +1,88 @@
+@import '../color';
+
+.dashboard-page {
+  &__title {
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $divider;
+    max-width: 650px;
+
+    span {
+      display: block;
+    }
+
+    :nth-child(1) {
+      color: $white;
+      font-size: 28px;
+      font-weight: 600px;
+    }
+
+    :nth-child(2) {
+      color: $search-text;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+
+  &__content {
+    border-radius: 8px;
+    background-color: $wrapper-background;
+    margin-top: 16px;
+    padding: 30px 0 0 30px;
+    width: 90%;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__sub-header {
+    color: $white;
+    font-size: 20px;
+  }
+
+  &__orders-table {
+    text-align: center;
+  }
+
+  &__orders-table th,
+  &__orders-table td {
+    padding: 20px 0;
+    color: $white;
+    font-size: 15px;
+  }
+
+  &__orders-table th {
+    border-bottom: 1pt solid $divider;
+  }
+
+  &__orders-table-td {
+    position: relative;
+  }
+
+  &__orders-table-td-name {
+    padding: 7px 4px 0;
+    box-sizing: border-box;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    line-height: 15px;
+    color: black;
+    background: $light-orange;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+
+  &__orders-table-td-name + &__orders-table-td-fullname {
+    padding-left: 20px;
+  }
+
+  &__orders-table-button {
+    border: none;
+    outline: none;
+    background-color: $dark-green;
+    color: $light-green;
+    border-radius: 10px;
+    padding: 2px 25px;
+  }
+}
